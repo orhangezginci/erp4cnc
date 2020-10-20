@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+          function httpGet(theUrl)
+{
+            fetch(theUrl);
+}
+            function increment(id){
+                root_url = '/api/increment/';
+                furl = 'http://127.0.0.1:3030/api/increment/'+id;
+                httpGet(furl);
+                }
+        </script>
+    </head>
+    <body>
+<button onclick="increment('1');">Maschine- 1</button><br>
+<button onclick="increment('2');">Maschine- 2</button><br>
+<button onclick="increment('3');">Maschine- 3</button><br>
+<button onclick="increment('4');">Maschine- 4</button><br>
+<button onclick="increment('5');">Maschine- 5</button><br>
+<button onclick="increment('6');">Maschine- 6</button><br>
+<button onclick="increment('7');">Maschine- 7</button><br>
+<button onclick="increment('8');">Maschine- 8</button><br>
+<button onclick="increment('9');">Maschine- 9</button><br>
+<button onclick="increment('10');">Maschine-10</button><br>
+<button onclick="increment('11');">Maschine-11</button><br>
+<button onclick="increment('12');">Maschine-12</button>
+    </body>
+</html>
+

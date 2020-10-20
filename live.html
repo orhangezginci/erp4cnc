@@ -1,0 +1,18 @@
+<html>
+    <header>
+        <script>
+            let ws = new WebSocket('ws://127.0.0.1:8000/ws');
+
+            ws.onopen = function(){
+//Subscribe to the channel
+//  ws.send(JSON.stringify({"command": "subscribe","identifier":"{\"channel\":\"ArticlesChannel\"}"}))
+}    
+
+        ws.onmessage = function(msg) {
+            alert(msg.data);
+            console.log(msg.data);
+        }
+        
+        </script>
+    </header>
+</html>
